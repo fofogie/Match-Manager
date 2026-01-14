@@ -139,7 +139,7 @@ void deleteLastRound(RoundNode* head) {
     while (prev->nextRound->nextRound) prev = prev->nextRound;
 
     if (!isRoundEmpty(prev->nextRound)) {
-        cout << "\n Cannot delete: Round is not empty!" << endl;
+        cout << "\n Cannot delete because round is not empty!" << endl;
         return;
     }
 
@@ -250,3 +250,4 @@ void cleanupTournament(RoundNode* h) {
 void displayMenu() {
     cout << "\n1. Display Bracket\n2. Input Score\n3. Team History Search\n4. Add New Final Round\n5. Delete First Round \n6. Delete Last Round \n7. Exit\nChoice: ";
 }
+
